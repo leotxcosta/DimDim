@@ -1,0 +1,22 @@
+﻿@model RegistroDespesaViewModel
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+		ViewBag.Title = "Registro de Despesas";
+}
+
+<form asp-action="registro">
+		<label asp-for="Valor">Valor:</label>
+		<input asp-for="Valor" />
+		<br />
+
+		<label asp-for="Data">Data:</label>
+		<input asp-for="Data" />
+		<br />
+
+		<label asp-for="Descricao">Descrição:</label>
+		<input asp-for="Descricao" />
+
+		<input type="submit" value="Registrar" />
+</form>

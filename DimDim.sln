@@ -7,6 +7,13 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DimDim.Web", "src\DimDim.We
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DimDim", "src\DimDim\DimDim.xproj", "{7CB02111-99DD-4AF5-8A7E-1B33326B763D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B1EDC331-63E4-4EA8-8559-420E31D8F73A}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DimDim.Infra", "src\DimDim.Infra\DimDim.Infra.xproj", "{4E62F15E-A212-4AB7-A358-D6C34F4D6DA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +28,10 @@ Global
 		{7CB02111-99DD-4AF5-8A7E-1B33326B763D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CB02111-99DD-4AF5-8A7E-1B33326B763D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CB02111-99DD-4AF5-8A7E-1B33326B763D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E62F15E-A212-4AB7-A358-D6C34F4D6DA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E62F15E-A212-4AB7-A358-D6C34F4D6DA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E62F15E-A212-4AB7-A358-D6C34F4D6DA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E62F15E-A212-4AB7-A358-D6C34F4D6DA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,44 @@
+﻿@model ListaDespesasViewModel
+@*
+	For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+	ViewBag.Title = "Despesas";
+}
+<a asp-action="Registro">Registro</a>
+
+<table>
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Data</th>
+			<th>Descrição</th>
+			<th>Valor</th>
+			<th>Ação</th>
+		</tr>
+	</thead>
+	<tbody>
+		@if (!Model.Despesas.Any())
+		{
+			<tr>
+				<td colspan="4">Nenhuma despesa</td>
+			</tr>
+			}
+			else
+			{
+				foreach (var d in Model.Despesas)
+				{
+				<tr>
+					<td>@d.Id</td>
+					<td>@d.Data</td>
+					<td>@d.Descricao</td>
+					<td>@d.Valor</td>
+					<td>
+						<a asp-action="Excluir" asp-route-id="@d.Id">Remover</a>
+					</td>
+				</tr>
+				}
+			}
+	</tbody>
+</table>
+
