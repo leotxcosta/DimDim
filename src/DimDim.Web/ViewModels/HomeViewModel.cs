@@ -7,7 +7,6 @@ namespace DimDim.Web.ViewModels
 {
     public class HomeViewModel
     {
-			public string Title { get; set; }
 			public DateTimeOffset Now { get; set; }
     }
 }

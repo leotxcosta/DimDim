@@ -12,7 +12,7 @@ namespace DimDim.Web.Controllers
 		public IActionResult Index()
 		{
 			var vm = new HomeViewModel();
-			vm.Title = "Dim Dim";
+			//vm.Title = "Dim Dim";
 			vm.Now = DateTimeOffset.Now;
 
 			return View(vm);
