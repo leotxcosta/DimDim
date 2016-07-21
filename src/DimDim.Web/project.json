@@ -20,7 +20,8 @@
 			"type": "build"
 		},
 		"DimDim": "1.0.0-*",
-		"DimDim.Infra": "1.0.0-*"
+			"DimDim.Infra": "1.0.0-*",
+			"Microsoft.AspNetCore.Mvc.Formatters.Xml": "1.0.0"
 	},
 
 	"tools": {

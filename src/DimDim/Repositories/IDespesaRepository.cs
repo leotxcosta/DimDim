@@ -9,6 +9,6 @@ namespace DimDim.Repositories
 	{
 		Despesa Insert(Despesa despesa);
 		IEnumerable<Despesa> FindAll();
-		Task ExcluirAsync(int id);
+		Task<bool> ExcluirAsync(int id);
 	}
 }

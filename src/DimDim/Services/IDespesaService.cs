@@ -10,6 +10,6 @@ namespace DimDim.Services
 	{
 		Despesa Registrar(RegistroDespesaCommand registro);
 		IEnumerable<Despesa> Buscar();
-		Task ExcluirAsync(int id);
+		Task<bool> ExcluirAsync(int id);
 	}
 }

@@ -3,9 +3,12 @@ using DimDim.Web.ViewModels;
 using DimDim.Services;
 using System.Threading.Tasks;
 using DimDim.Commands;
+using DimDim.Web.DTO;
+using System.Linq;
 
 namespace DimDim.Web.Controllers
 {
+	
 	public class DespesasController : Controller
 	{
 		private readonly IDespesaService despesaService;
@@ -30,7 +33,7 @@ namespace DimDim.Web.Controllers
 
 		[HttpPost]
 		public IActionResult Registro(RegistroDespesaViewModel vm)
-		{
+		{  
 			var cmd = new RegistroDespesaCommand()
 			{
 				Data = vm.Data,
@@ -49,6 +52,6 @@ namespace DimDim.Web.Controllers
 
 			return RedirectToAction("Index");
 		}
-
 	}
 }
+ 

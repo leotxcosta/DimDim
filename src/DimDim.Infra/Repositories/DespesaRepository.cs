@@ -17,14 +17,16 @@ namespace DimDim.Infra.Repositories
 			db = context;
 		}
 
-		public async Task ExcluirAsync(int id)
+		public async Task<bool> ExcluirAsync(int id)
 		{
 			var d = await db.Despesas.FirstOrDefaultAsync(x => x.Id == id);
 
-			if (d == null) return;
+			if (d == null) return false;
 
 			db.Despesas.Remove(d);
-			await db.SaveChangesAsync();
+			var i = await db.SaveChangesAsync();
+
+			return (i > 0);
 		}
 
 		public IEnumerable<Despesa> FindAll()

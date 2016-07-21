@@ -21,7 +21,7 @@ namespace DimDim.Services
 			return repositorio.FindAll();
 		}
 
-		public Task ExcluirAsync(int id)
+		public Task<bool> ExcluirAsync(int id)
 		{
 			return repositorio.ExcluirAsync(id);
 		}
